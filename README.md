@@ -1,5 +1,5 @@
 # HR_pred_model 
-A Machine Learning model for predecting the Heart Rate. \
+A Machine Learning model for predicting the Heart Rate. \
 Competition - AI Cure: Parsec 4.0
 
 
