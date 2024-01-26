@@ -40,8 +40,8 @@ python train.py
 For comprehensive training steps, experiments, and visualizations, please refer to the '**training.ipynb**' notebook. Ensure that you choose the appropriate Python kernel for executing the notebook.
 
 # Rsults
-![Result on test split(20%)](https://github.com/divyjx/HR_pred_model/blob/main/test_80_20.png?raw=true)
-![Results of 5-Fold Cross Validation](https://github.com/divyjx/HR_pred_model/blob/main/test_5_fold.png?raw=true)
+![Result on test split(20%)](https://github.com/divyjx/HR_pred_model/blob/main/images/test_80_20.png?raw=true)
+![Results of 5-Fold Cross Validation](https://github.com/divyjx/HR_pred_model/blob/main/images/test_5_fold.png?raw=true)
 
 Optimized LGBMRegressor, as the final model, gave average Mean Squared Error (MSE) of **0.1310** in 5-fold cross-validation.
 
