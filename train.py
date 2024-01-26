@@ -73,11 +73,23 @@ def train():
     best_parameters = {'learning_rate': 0.05958008171890075,
                         'max_depth': 29, 'n_estimators': 376,
                         'num_leaves': 28}
-    model = LGBMRegressor(force_col_wise=True, verbose = 0, **best_parameters)     # 0.1310 - BEST
-    scores = cross_val_score(model, X, y, cv=5, scoring='neg_mean_squared_error')
-    average_mse = -1 * scores.mean()
-    print('LGBMRegressor(random search) Average MSE: {:.4f}'.format(average_mse))
+    
+    model = LGBMRegressor(force_col_wise=True, verbose=0, **best_parameters)
 
+    mse_scores = cross_val_score(model, X, y, cv=5, scoring='neg_mean_squared_error')
+    average_mse = -1 * mse_scores.mean()
+    print('LGBMRegressor Average MSE: {:.4f}'.format(average_mse))
+    
+    r2_scores = cross_val_score(model, X, y, cv=5, scoring='r2')
+    average_r2 = r2_scores.mean()
+    print('LGBMRegressor Average R²: {:.4f}'.format(average_r2))
+    
+    explained_variance_scores = cross_val_score(model, X, y, cv=5, scoring='explained_variance')
+    average_explained_variance = explained_variance_scores.mean()
+    print('LGBMRegressor Average Explained Variance: {:.4f}'.format(average_explained_variance))
+
+    print('Model Accuracy : {:.4f}%'.format(average_explained_variance*100))
+    
     # final model
     best_model = LGBMRegressor(
         force_col_wise=True,

@@ -7,8 +7,7 @@ from joblib import dump, load
 from lightgbm import LGBMRegressor
 
 def check_dir(name):
-    model_directory = "./models"
-    if not os.path.exists(model_directory):
+    if not os.path.exists(name):
         print(f"{name} file or directory is not present, run train.py to build model first")
         exit()
 
