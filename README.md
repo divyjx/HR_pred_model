@@ -1,17 +1,6 @@
 # Heart Rate Prediction Model 🔥
 A powerful Machine Learning model designed to predict heart rates, developed for the AI Cure: Parsec 4.0 competition.
 
-### Data Preparation
-Data preprocessing was a crucial step, involving the removal of redundant features, scaling the dataset, and separating labels for better model training. To gain more insights into the dataset, we utilized visualization techniques. This includes histogram plots of feature vectors and a correlation heatmap. Then, highly correlated features were removed, resulting in a reduction of features from 36 to 32 without compromising performance. Some features were averaged out, while others were directly removed.
-
-### Model Training
-Multiple regression models were considered during the training phase, including Linear Regression (as a benchmark), RandomForestRegressor, XGBRegressor, and LGBMRegressor. We used Mean Squared Error (MSE) as our evaluation metric.  Initially, they were trained on 80% of the data and evaluated on the remaining 20%. Further evaluation utilized 5-fold cross-validation, revealing the superior performance of the LGBMRegressor. 
-
-### Final Model
-The LGBMRegressor model was hyperparameter-tuned using random grid search to identify optimal parameters, ensuring the lowest MSE in heart rate predictions.
-
-Feel free to explore the '**training.ipynb**' notebook for a detailed walkthrough of the training process and results. 
-
 # Setup 🛠️
 Clone this repository
 ```bash
@@ -39,6 +28,19 @@ python train.py
 ```
 For comprehensive training steps, experiments, and visualizations, please refer to the '**training.ipynb**' notebook. Ensure that you choose the appropriate Python kernel for executing the notebook.
 
+# Method
+### Data Preparation
+Data preprocessing was a crucial step, involving the removal of redundant features, scaling the dataset, and separating labels for better model training. To gain more insights into the dataset, we utilized visualization techniques. This includes histogram plots of feature vectors and a correlation heatmap. Then, highly correlated features were removed, resulting in a reduction of features from 36 to 32 without compromising performance. Some features were averaged out, while others were directly removed.
+
+### Model Training
+Multiple regression models were considered during the training phase, including Linear Regression (as a benchmark), RandomForestRegressor, XGBRegressor, and LGBMRegressor. We used Mean Squared Error (MSE) as our evaluation metric.  Initially, they were trained on 80% of the data and evaluated on the remaining 20%. Further evaluation utilized 5-fold cross-validation, revealing the superior performance of the LGBMRegressor. 
+
+### Final Model
+The LGBMRegressor model was hyperparameter-tuned using random grid search to identify optimal parameters, ensuring the lowest MSE in heart rate predictions.
+
+Feel free to explore the '**training.ipynb**' notebook for a detailed walkthrough of the training process and results. 
+
+
 # Results 📊
 <table>
   <tr>
@@ -52,7 +54,7 @@ For comprehensive training steps, experiments, and visualizations, please refer 
 </table>
 
 
-For optipised LGBMRegressor model, 
+For optimised LGBMRegressor model, 
 | Metric             | Value     |
 |--------------------|-----------|
 | Mean HR            | 74.00     |
@@ -64,7 +66,7 @@ For optipised LGBMRegressor model,
 *Model Accuracy = Explained Variance * 100
 # Team Info 
 Team Name : TM 
-<center>
+
 <table >
   <tr>
     <th><b>Members</b></th>
@@ -81,10 +83,9 @@ Team Name : TM
   <tr>
     <td>Karthik Hegde</td>
     <td>210010022</td>
-    <td>--</td>
+    <td>7038822101</td>
   </tr>
 </table>
-</center>
 
 
 
