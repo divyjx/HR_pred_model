@@ -52,30 +52,40 @@ For comprehensive training steps, experiments, and visualizations, please refer 
 </table>
 
 
-<p align="center">Mean HR is 74.00.</p>
-<p align="center">Optimized LGBMRegressor gave an average Mean Squared Error (MSE) of <strong>0.1310</strong> in 5-fold cross-validation.</p>
+For optipised LGBMRegressor model, 
+| Metric             | Value     |
+|--------------------|-----------|
+| Mean HR            | 74.00     |
+| Average MSE        | 0.1310    |
+| R²  Score          | 0.9988    |
+| Explained Variance | 0.9988    |
+| Model Accuracy*    | **99.8815%**|
 
-
+*Model Accuracy = Explained Variance * 100
 # Team Info 
 Team Name : TM 
-<table>
+<center>
+<table >
   <tr>
-    <th>Members</th>
-    <th>Contact</th>
-    <th>Roll Number</th>
+    <th><b>Members</b></th>
+    <th> <b>Roll Number</b></th>
+    <th><b>Contact</b> </th>
   </tr>
   
   <tr>
     <td>Divy jain</td>
-    <td>9516644309</td>
     <td>210010015</td>
+    <td>9516644309</td>
   </tr>
   
   <tr>
     <td>Karthik Hegde</td>
-    <td>--</td>
     <td>210010022</td>
+    <td>--</td>
   </tr>
 </table>
+</center>
+
+
 
 
